@@ -272,7 +272,7 @@ matches:
     replace: "intramuscular"
     propagate_case: true
 
-  - trigger: ":iv"
+  - trigger: ":iv:"
     replace: "intravascular"
     propagate_case: true
 
@@ -1446,448 +1446,507 @@ matches:
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":his:"
+    replace: "histology"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":gbm"
+    replace: "glioblastoma multiforme"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: :hr
+    replace: "heart-rate"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":tv:"
+    replace: "tidal volume"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":tpr"
+    replace: "total peripheral resistance"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":co:"
+    replace: "cardiac output"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":sv:"
+    replace: "stroke volume"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":al:"
+    replace: "afterload"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":svt"
+    replace: "supraventricular tachycardia"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":pvc"
+    replace: "premature contractions"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":nsr"
+    replace: "normal sinus rhythm"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":vtac"
+    replace: "ventricular tachycardia"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":vfib"
+    replace: "ventricular fibrillation"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":tpneu"
+    replace: "tension pneumothorax"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":cva"
+    replace: "cerebrovascular accident"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":es:"
+    replace: "endoscope"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":fs:"
+    replace: "fluoroscope"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":subl"
+    replace: "sublingual"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":ns:"
+    replace: "normal saline"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":lrin"
+    replace: "lactated ringer's solution"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":abg"
+    replace: "arterial blood gas"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":lp:"
+    replace: "lumbar puncture"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":pox:"
+    replace: "pulse oximet"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":lap:"
+    replace: "laparotomy"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":vpun:"
+    replace: "venipuncture"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":aloc:"
+    replace: "acute loss of consciousness"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":bmi"
+    replace: "body-mass index"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":bls"
+    replace: "basic life support"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":cpr"
+    replace: "cardiopulmonary resuscitation"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":dnr"
+    replace: "do not resuscitate"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":doa"
+    replace: "dead on arrival"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":ed:"
+    replace: "emergency department"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":er:"
+    replace: "emergency room"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":eeg"
+    replace: "electroencephalogram"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":kub:"
+    replace: "kidney, ureter and bladder X-Ray"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":nicu"
+    replace: "neonatal intensive care unit"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":pt:"
+    replace: "physical therapy"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":u/a"
+    replace: "urinalysis"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":wnwd"
+    replace: "well nourished, well developed"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":exa:"
+    replace: "exacerbat"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":alle"
+    replace: "alleviat"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":idi:"
+    replace: "idiopathic"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":ac:"
+    replace: "antecubital"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":5ar"
+    replace: "5α-Reductase"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":aur:"
+    replace: "acute urinary retention"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":abd:"
+    replace: "abduction"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":add:"
+    replace: "adduction"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":adj:"
+    replace: "adjuvant"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":nadj"
+    replace: "neo-adjuvent"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":amd"
+    replace: "age-related macular degeneration"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":adh"
+    replace: "antidiuretic hormone"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":aipc"
+    replace: "androgen-independent prostate cancer"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":tnbc"
+    replace: "triple-negative breast cancer"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":h2pbc"
+    replace: "HER2-positive breast cancer"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":prpbc"
+    replace: "progesterone receptor-positive breast cancer"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":erpbc"
+    replace: "estrogen receptor-positive breast cancer"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":at:"
+    replace: "angiotensin"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":abi:"
+    replace: "ankle-brachial index"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":accp"
+    replace: "anti-cyclic citrullinated peptide"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":anca:"
+    replace: "antineutrophil cytoplasmic antibodies"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":ssri"
+    replace: "selective serotoning receptor inhibitor"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":snri"
+    replace: "selective norepinephrine receptor inhibitor"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":ahtn"
+    replace: "antihypertensive"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":app:"
+    replace: "amyloid precursor protein"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":bcc"
+    replace: "basal-cell carcinoma"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":scc"
+    replace: "squamous-cell carcinoma"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":bph"
+    replace: "benign prostate hyperplasia"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":bac:"
+    replace: "blood-alcohol concentration"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":bun:"
+    replace: "blood urea nitrogen"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":bmd"
+    replace: "bone mineral density"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":cpb"
+    replace: "cardiopulmonary bypass"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":ccu"
+    replace: "coronary care unit"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":ck:"
+    replace: "creatinine kinase"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":cush:"
+    replace: "cushing's syndrome"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":dre:"
+    replace: "digital rectal examination"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":dht"
+    replace: "dihydrotestosterone"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":1cn"
+    replace: "cranial nerve I"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":2cn"
+    replace: "cranial nerve II"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":3cn"
+    replace: "cranial nerve III"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":4cn"
+    replace: "cranial nerve IV"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":5cn"
+    replace: "cranial nerve V"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":6cn"
+    replace: "cranial nerve VI"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":7cn"
+    replace: "cranial nerve VII"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":8cn"
+    replace: "cranial nerve VIII"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":9cn"
+    replace: "cranial nerve IX"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":10cn"
+    replace: "cranial nerve X"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":11cn"
+    replace: "cranial nerve XI"
     propagate_case: true
 
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":12cn"
+    replace: "cranial nerve XII"
     propagate_case: true
 
+  - trigger: ":icn"
+    replace: "olfactory nerve"
+    propagate_case: true
+
+
+  - trigger: ":iicn"
+    replace: "optic nerve"
+    propagate_case: true
+
+
+  - trigger: ":iiicn"
+    replace: "oculomotor nerve"
+    propagate_case: true
+
+
+  - trigger: ":ivcn"
+    replace: "trochlear nerve"
+    propagate_case: true
+
+
+  - trigger: ":vcn"
+    replace: "trigeminal nerve"
+    propagate_case: true
+
+
+  - trigger: ":vicn"
+    replace: "abducens nerve"
+    propagate_case: true
+
+
+  - trigger: ":viicn"
+    replace: "facial nerve"
+    propagate_case: true
+
+
+  - trigger: ":viiicn"
+    replace: "vestibulocochlear nerve"
+    propagate_case: true
+
+
+  - trigger: ":ixcn"
+    replace: "glossopharyngeal nerve"
+    propagate_case: true
+
+
+  - trigger: ":xcn"
+    replace: "vagus nerve"
+    propagate_case: true
+
+
+  - trigger: ":xicn"
+    replace: "accessory nerve"
+    propagate_case: true
+
+
+  - trigger: ":xiicn"
+    replace: "hypglossal nerve"
+    propagate_case: true
+
 
-  - trigger: ":rx"
-    replace: "prescription"
+  - trigger: ":erd:"
+    replace: "erectile dysfunction"
     propagate_case: true
 
 
