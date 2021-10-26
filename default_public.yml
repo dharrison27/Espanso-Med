@@ -1,0 +1,4452 @@
+# espanso configuration file
+
+# This is the default configuration file, change it as you like it
+# You can refer to the official documentation:
+# https://espanso.org/docs/
+
+# Matches are the substitution rules, when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Simple text replacement
+
+  - trigger: ":epo"
+    replace: "erythropoietin"
+    propagate_case: true
+
+  - trigger: ":c1"
+    replace: "{{C1::$|$}}"
+    propagate_case: true
+
+  - trigger: ":c2"
+    replace: "{{C2::$|$}}"
+    propagate_case: true
+
+  - trigger: ":c3"
+    replace: "{{C3::$|$}}"
+    propagate_case: true
+
+  - trigger: ":c4"
+    replace: "{{C4::$|$}}"
+    propagate_case: true
+
+  - trigger: ":c5"
+    replace: "{{C5::$|$}}"
+    propagate_case: true
+
+  - trigger: ":c6"
+    replace: "{{C6::$|$}}"
+    propagate_case: true
+
+
+  - trigger: ":c8"
+    replace: "{{C8::$|$}}"
+    propagate_case: true
+
+  - trigger: ":c9"
+    replace: "{{C6::$|$}}"
+    propagate_case: true
+
+
+  - trigger: ":ci"
+    replace: "contraindicat"
+    propagate_case: true
+
+  - trigger: ":tx"
+    replace: "treatment"
+    propagate_case: true
+
+  - trigger: ":sx"
+    replace: "surgery"
+    propagate_case: true
+
+  - trigger: ":hx"
+    replace: "history"
+    propagate_case: true
+
+  - trigger: ":fhx"
+    replace: "family history"
+    propagate_case: true
+
+  - trigger: ":abx"
+    replace: "antibiotics"
+    propagate_case: true
+
+  - trigger: ":moa"
+    replace: "mechanism of action"
+    propagate_case: true
+
+  - trigger: ":rbc"
+    replace: "erythrocyte"
+    propagate_case: true
+
+  - trigger: ":sfx"
+    replace: "side-effects"
+    propagate_case: true
+
+  - trigger: ":pd"
+    replace: "pharmacodynamics"
+    propagate_case: true
+
+  - trigger: ":pk"
+    replace: "pharmacokinetics"
+    propagate_case: true
+
+  - trigger: ":gi"
+    replace: "gastrointestinal"
+    propagate_case: true
+
+  - trigger: ":lrti"
+    replace: "lower respiratory tract infection"
+    propagate_case: true
+
+  - trigger: ":urti"
+    replace: "upper respiratory tract infection"
+    propagate_case: true
+
+  - trigger: ":gu"
+    replace: "genitourinary"
+    propagate_case: true
+
+  - trigger: ":sns"
+    replace: "sympathetic nervous system"
+    propagate_case: true
+
+  - trigger: ":psns"
+    replace: "parasympathetic nervous system"
+    propagate_case: true
+
+  - trigger: ":pns"
+    replace: "peripheral nervous system"
+    propagate_case: true
+
+  - trigger: ":cns"
+    replace: "central nervous system"
+    propagate_case: true
+
+  - trigger: ":hb"
+    replace: "haemoglobin"
+    propagate_case: true
+
+  - trigger: ":g6p"
+    replace: "glucose-6-phosphate"
+    propagate_case: true
+
+  - trigger: ":f6p"
+    replace: "fructose-6-phosphate"
+    propagate_case: true
+
+  - trigger: ":f16bp"
+    replace: "fructose-1,6-bisphosphate"
+    propagate_case: true
+
+  - trigger: ":ecf"
+    replace: "extracellular fluid"
+    propagate_case: true
+
+  - trigger: ":isf"
+    replace: "interstitial fluid"
+    propagate_case: true
+
+  - trigger: ":f26bp"
+    replace: "fructose-2,6-bisphosphate"
+    propagate_case: true
+
+  - trigger: ":np"
+    replace: "neutrophil"
+    propagate_case: true
+
+  - trigger: ":bp"
+    replace: "basophil"
+    propagate_case: true
+
+  - trigger: ":eo"
+    replace: "eosinophil"
+    propagate_case: true
+
+  - trigger: ":13bpg"
+    replace: "1,3-bisphosphoglycerate"
+    propagate_case: true
+
+  - trigger: ":g3p"
+    replace: "glyceraldehyde-3-phosphate"
+    propagate_case: true
+
+  - trigger: ":csf"
+    replace: "cerebrospinal fluid"
+    propagate_case: true
+
+  - trigger: ":ipsl"
+    replace: "ipsalater$|$"
+    propagate_case: true
+
+  - trigger: ":conlat"
+    replace: "contralater$|$"
+    propagate_case: true
+
+  - trigger: ":prox"
+    replace: "proximal$|$"
+    propagate_case: true
+
+  - trigger: ":+ve"
+    replace: "positive"
+    propagate_case: true
+
+  - trigger: ":-ve"
+    replace: "negative"
+    propagate_case: true
+
+  - trigger: ":nad"
+    replace: "no abnormalities detected"
+    propagate_case: true
+
+  - trigger: ":cv"
+    replace: "cardiovascular"
+    propagate_case: true
+
+
+  - trigger: ":22"
+    replace: "secondary to"
+    propagate_case: true
+
+
+  - trigger: ":a."
+    replace: "artery"
+    propagate_case: true
+
+
+  - trigger: ":v."
+    replace: "vein"
+    propagate_case: true
+
+
+  - trigger: ":n."
+    replace: "nerve"
+    propagate_case: true
+
+
+  - trigger: ":u/s"
+    replace: "ultrasound"
+    propagate_case: true
+
+
+  - trigger: ":abd"
+    replace: "abdomin"
+    propagate_case: true
+
+  - trigger: ":npo"
+    replace: "nil per oral"
+    propagate_case: true
+
+
+  - trigger: ":ka"
+    replace: "ketoacidosis"
+    propagate_case: true
+
+
+  - trigger: ":emgen"
+    replace: "embryogenesis"
+    propagate_case: true
+
+
+  - trigger: ":nad"
+    replace: "no abnormalities detected"
+    propagate_case: true
+
+
+  - trigger: ":c7"
+    replace: "{{c7::$|$}}"
+    propagate_case: true
+
+
+  - trigger: ":ng"
+    replace: "nasogastric"
+    propagate_case: true
+
+
+  - trigger: ":dhp"
+    replace: "dihydropyridine"
+    propagate_case: true
+
+
+  - trigger: ":im"
+    replace: "intramuscular"
+    propagate_case: true
+
+  - trigger: ":iv"
+    replace: "intravascular"
+    propagate_case: true
+
+  - trigger: ":sq"
+    replace: "sub-cutaneous"
+    propagate_case: true
+
+  - trigger: ":lar"
+    replace: "←"
+    propagate_case: true
+
+  - trigger: ":rar"
+    replace: "→"
+    propagate_case: true
+
+  - trigger: ":dar"
+    replace: "↓"
+    propagate_case: true
+
+
+  - trigger: ":uar"
+    replace: "↑"
+    propagate_case: true
+
+
+  - trigger: ":equilib"
+    replace: "⇋"
+    propagate_case: true
+
+
+  - trigger: ":e2"
+    replace: "estradiol"
+    propagate_case: true
+
+
+  - trigger: ":prog"
+    replace: "progesterone"
+    propagate_case: true
+
+
+  - trigger: ":gag"
+    replace: "glycosaminoglycan"
+    propagate_case: true
+
+
+  - trigger: ":vwf"
+    replace: "von-willebrand factor"
+    propagate_case: true
+
+
+  - trigger: ":fII"
+    replace: "prothrombin"
+    propagate_case: true
+
+
+  - trigger: ":fIIa"
+    replace: "thrombin"
+    propagate_case: true
+
+
+  - trigger: ":pg"
+    replace: "prostaglandin"
+    propagate_case: true
+
+
+  - trigger: ":pgf"
+    replace: "platelet-growth factor"
+    propagate_case: true
+
+
+  - trigger: ":txa"
+    replace: "thromboxane"
+    propagate_case: true
+
+
+  - trigger: ":oaa"
+    replace: "oxaloacetate"
+    propagate_case: true
+
+
+  - trigger: ":succoa"
+    replace: "succinyl-CoA"
+    propagate_case: true
+
+
+  - trigger: ":cox"
+    replace: "cyclooxygenase"
+    propagate_case: true
+
+
+  - trigger: ":lox"
+    replace: "lipoxygenase"
+    propagate_case: true
+
+
+  - trigger: ":asa"
+    replace: "aspirin"
+    propagate_case: true
+
+
+  - trigger: ":pamp"
+    replace: "pathogen associated molecular pattern"
+    propagate_case: true
+
+
+  - trigger: ":lps"
+    replace: "lipopolysaccharide"
+    propagate_case: true
+
+  - trigger: ":mhc"
+    replace: "major histocompatibility complex"
+    propagate_case: true
+
+  - trigger: ":malt"
+    replace: "myeloid associated lymphoid tissue"
+    propagate_case: true
+
+
+  - trigger: ":mb"
+    replace: "myoglobin"
+    propagate_case: true
+
+
+  - trigger: ":23bpg"
+    replace: "2,3-bisphosphoglycerate"
+    propagate_case: true
+
+
+  - trigger: ":ret"
+    replace: "reticulocyte"
+    propagate_case: true
+
+
+  - trigger: ":tagbhi"
+    replace: "GEM::Y1::BHI::BHI"
+    propagate_case: true
+
+
+  - trigger: ":taghbps"
+    replace: "GEM::Y1::HBPS::HBPS"
+    propagate_case: true
+
+
+  - trigger: ":tagmb"
+    replace: "GEM::Y1::MSB::MSB"
+    propagate_case: true
+
+
+  - trigger: ":tagfun"
+    replace: "GEM::Y1::FUN::FUN"
+    propagate_case: true
+
+
+  - trigger: ":hbps"
+    replace: "Human Behaviour and Patient Safety"
+    propagate_case: true
+
+
+  - trigger: ":fun"
+    replace: "Fundamentals of Biomedicine"
+    propagate_case: true
+
+  - trigger: ":copd"
+    replace: "chronic obstructive pulmonary disease"
+    propagate_case: true
+
+
+  - trigger: ":t2dm"
+    replace: "type II diabetes mellitus"
+    propagate_case: true
+
+
+  - trigger: ":t1dm"
+    replace: "type I diabetes mellitus"
+    propagate_case: true
+
+
+  - trigger: ":ms:"
+    replace: "multiple sclerosis"
+    propagate_case: true
+
+
+  - trigger: ":path"
+    replace: "pathology"
+    propagate_case: true
+
+
+  - trigger: ":neu:"
+    replace: "neurolog"
+    propagate_case: true
+
+
+  - trigger: ":fbc"
+    replace: "full blood count"
+    propagate_case: true
+
+
+  - trigger: ":u/e"
+    replace: "urea & electrolytes"
+    propagate_case: true
+
+
+  - trigger: ":crp"
+    replace: "C-reactive protein"
+    propagate_case: true
+
+
+  - trigger: ":tsh"
+    replace: "thyroid-stimulating hormone"
+    propagate_case: true
+
+
+  - trigger: ":esr"
+    replace: "erythrocyte sedimentation rate"
+    propagate_case: true
+
+
+  - trigger: ":pt"
+    replace: "patient"
+    propagate_case: true
+
+
+  - trigger: ":cvs"
+    replace: "cardiovascular system"
+    propagate_case: true
+
+
+  - trigger: ":afib"
+    replace: "atrial fibrillation"
+    propagate_case: true
+
+
+  - trigger: ":vfib"
+    replace: "ventricular fibrillation"
+    propagate_case: true
+
+
+  - trigger: ":svt"
+    replace: "supra-ventricular tachycardia"
+    propagate_case: true
+
+
+  - trigger: ":arrh"
+    replace: "arrhythmia"
+    propagate_case: true
+
+
+  - trigger: ":pea"
+    replace: "pulseless electrical activity"
+    propagate_case: true
+
+
+  - trigger: ":aed"
+    replace: "anti-epileptic drug"
+    propagate_case: true
+
+
+  - trigger: ":bdz"
+    replace: "benzodiazepine"
+    propagate_case: true
+
+
+  - trigger: ":5ht"
+    replace: "serotonin"
+    propagate_case: true
+
+
+  - trigger: ":DA"
+    replace: "dopamine"
+    propagate_case: true
+
+
+  - trigger: ":NA"
+    replace: "noradrenaline"
+    propagate_case: true
+
+
+  - trigger: ":NE"
+    replace: "norepinephrine"
+    propagate_case: true
+
+
+  - trigger: ":cxr"
+    replace: "chest X-Ray"
+    propagate_case: true
+
+
+  - trigger: ":pci"
+    replace: "percutaneous coronary intervention"
+    propagate_case: true
+
+
+  - trigger: ":msk"
+    replace: "muskuloskeletal"
+    propagate_case: true
+
+
+  - trigger: ":wnwd"
+    replace: "well nourished, well developed"
+    propagate_case: true
+
+
+  - trigger: ":GEM"
+    replace: "graduate-entry medicine"
+    propagate_case: true
+
+
+  - trigger: ":medrec"
+    replace: "medicine reconciliation"
+    propagate_case: true
+
+
+  - trigger: ":bhi"
+    replace: "Blood, Haematology and Immunology"
+    propagate_case: true
+
+
+  - trigger: ":vle"
+    replace: "vle.rcsi.com"
+    propagate_case: true
+
+
+  - trigger: ":nkda"
+    replace: "no known drug allergies"
+    propagate_case: true
+
+
+  - trigger: ":korc"
+    replace: "keep out of reach of children"
+    propagate_case: true
+
+
+  - trigger: ":pvd"
+    replace: "peripheral vascular disease"
+    propagate_case: true
+
+
+  - trigger: ":abi:"
+    replace: "ankle-brachial index"
+    propagate_case: true
+
+  - trigger: ":htn"
+    replace: "hypertension"
+    propagate_case: true
+
+
+  - trigger: ":hcae"
+    replace: "hypercholesterolaemia"
+    propagate_case: true
+
+
+  - trigger: ":sy:"
+    replace: "symptoms"
+    propagate_case: true
+
+
+  - trigger: ":abi"
+    replace: "ankle-brachial index"
+    propagate_case: true
+
+
+  - trigger: ":bka"
+    replace: "below-the-knee amputation" 
+    propagate_case: true
+
+
+  - trigger: ":bp"
+    replace: "blood pressure"
+    propagate_case: true
+
+
+  - trigger: ":c/o"
+    replace: "complaining of"
+    propagate_case: true
+
+
+  - trigger: ":cabg"
+    replace: "coronary artery bypass graft"
+    propagate_case: true
+
+
+  - trigger: ":cc"
+    replace: "chief complaint"
+    propagate_case: true
+
+
+  - trigger: ":dx"
+    replace: "diagnosis"
+    propagate_case: true
+
+
+  - trigger: ":ddx"
+    replace: "differential diagnosis"
+    propagate_case: true
+
+
+  - trigger: ":dnr"
+    replace: "do not resuscitate"
+    propagate_case: true
+
+
+  - trigger: ":etoh"
+    replace: "alcohol"
+    propagate_case: true
+
+
+  - trigger: ":ect"
+    replace: "electroconvulsive therapy"
+    propagate_case: true
+
+
+  - trigger: ":h&h"
+    replace: "haemoglobin and haematocrit"
+    propagate_case: true
+
+  - trigger: ":hct"
+    replace: "haematocrit"
+    propagate_case: true
+
+
+  - trigger: ":h/o"
+    replace: "history of"
+    propagate_case: true
+
+
+  - trigger: ":icd"
+    replace: "implantable cardiac defibrillator"
+    propagate_case: true
+
+  - trigger: ":jt"
+    replace: "joint"
+    propagate_case: true
+
+
+  - trigger: ":ra:"
+    replace: "rheumatoid arthritis"
+    propagate_case: true
+
+
+  - trigger: ":as:"
+    replace: "ankylosing spondylitis"
+    propagate_case: true
+
+
+  - trigger: ":vert"
+    replace: "vertebrae"
+    propagate_case: true
+
+
+  - trigger: ":lbp"
+    replace: "lower back pain"
+    propagate_case: true
+
+
+  - trigger: ":luq"
+    replace: "left-upper quadrant"
+    propagate_case: true
+
+
+  - trigger: ":ruq"
+    replace: "right-upper quadrant"
+    propagate_case: true
+
+
+  - trigger: ":llq"
+    replace: "left-lower quadrant"
+    propagate_case: true
+
+
+  - trigger: ":rlq"
+    replace: "right-lower quadrant"
+    propagate_case: true
+
+
+  - trigger: ":mcl"
+    replace: "medial collateral ligament"
+    propagate_case: true
+
+
+  - trigger: ":lcl"
+    replace: "lateral collateral ligament"
+    propagate_case: true
+
+
+  - trigger: ":l."
+    replace: "ligament"
+    propagate_case: true
+
+
+  - trigger: ":n/v"
+    replace: "nausea and vomiting"
+    propagate_case: true
+
+
+  - trigger: ":na"
+    replace: "sodium"
+    propagate_case: true
+
+
+  - trigger: ":nsr"
+    replace: "normal sinus rhythm"
+    propagate_case: true
+
+
+  - trigger: ":prn"
+    replace: "as needed"
+    propagate_case: true
+
+
+  - trigger: ":mdu"
+    replace: "as directed"
+    propagate_case: true
+
+
+  - trigger: ":perrla"
+    replace: "pupils equal, round and reactive to light and accommodation"
+    propagate_case: true
+
+
+  - trigger: ":ie:"
+    replace: "🇮🇪"
+    propagate_case: true
+
+
+  - trigger: "\\neq\\"
+    replace: "≠"
+    propagate_case: true
+
+
+  - trigger: ":2/2"
+    replace: "secondary to"
+    propagate_case: true
+
+
+  - trigger: ":bd"
+    replace: "twice daily"
+    propagate_case: true
+
+
+  - trigger: ":tds"
+    replace: "three times daily"
+    propagate_case: true
+
+
+  - trigger: ":qds"
+    replace: "four times daily"
+    propagate_case: true
+
+
+  - trigger: ":od:"
+    replace: "once daily"
+    propagate_case: true
+
+
+  - trigger: ":qod"
+    replace: "every second day"
+    propagate_case: true
+
+
+  - trigger: ":1/12"
+    replace: "one month"
+    propagate_case: true
+
+
+  - trigger: ":2/12"
+    replace: "two month"
+    propagate_case: true
+
+
+  - trigger: ":3/12"
+    replace: "three month"
+    propagate_case: true
+
+
+  - trigger: ":4/12"
+    replace: "four month"
+    propagate_case: true
+
+
+  - trigger: ":5/12"
+    replace: "five month"
+    propagate_case: true
+
+
+  - trigger: ":6/12"
+    replace: "six month"
+    propagate_case: true
+
+
+  - trigger: ":7/12"
+    replace: "seven month"
+    propagate_case: true
+
+
+  - trigger: ":8/12"
+    replace: "eight month"
+    propagate_case: true
+
+
+  - trigger: ":9/12"
+    replace: "nine month"
+    propagate_case: true
+
+
+  - trigger: ":10/12"
+    replace: "ten month"
+    propagate_case: true
+
+
+  - trigger: ":11/12"
+    replace: "11 month"
+    propagate_case: true
+
+
+  - trigger: ":12/12"
+    replace: "12 month"
+    propagate_case: true
+
+
+  - trigger: ":1/52"
+    replace: "one week"
+    propagate_case: true
+
+
+  - trigger: ":2/52"
+    replace: "two week"
+    propagate_case: true
+
+
+  - trigger: ":3/52"
+    replace: "three week"
+    propagate_case: true
+
+
+  - trigger: ":4/52"
+    replace: "four week"
+    propagate_case: true
+
+
+  - trigger: ":5/52"
+    replace: "five week"
+    propagate_case: true
+
+
+  - trigger: ":6/52"
+    replace: "six week"
+    propagate_case: true
+
+
+  - trigger: ":7/52"
+    replace: "seven week"
+    propagate_case: true
+
+
+  - trigger: ":8/52"
+    replace: "eight week"
+    propagate_case: true
+
+
+  - trigger: ":9/52"
+    replace: "nine week"
+    propagate_case: true
+
+
+  - trigger: ":10/52"
+    replace: "10 week"
+    propagate_case: true
+
+
+  - trigger: ":11/52"
+    replace: "12 week"
+    propagate_case: true
+
+
+  - trigger: ":txa2"
+    replace: "thromboxane A2"
+    propagate_case: true
+
+
+  - trigger: ":sle"
+    replace: "systemic lupus erythematosus"
+    propagate_case: true
+
+
+  - trigger: ":nsaid"
+    replace: "non-steroidal anti-inflammatory drug"
+    propagate_case: true
+
+
+  - trigger: ":otc"
+    replace: "over-the-counter"
+    propagate_case: true
+
+
+  - trigger: ":lenny:"
+    replace: "( ͡° ͜ʖ ͡°)"
+    propagate_case: true
+
+
+  - trigger: ":apap"
+    replace: "paracetamol"
+    propagate_case: true
+
+
+  - trigger: ":mi:"
+    replace: "myocardial infarction"
+    propagate_case: true
+
+
+  - trigger: ":ppi"
+    replace: "proton-pump inhibitor"
+    propagate_case: true
+
+
+  - trigger: ":anca"
+    replace: "anti nuclear citrullinated antibodies"
+    propagate_case: true
+
+
+  - trigger: ":acpa"
+    replace: "anti citrullinated protein antibodies"
+    propagate_case: true
+
+
+  - trigger: ":ab:"
+    replace: "antibody"
+    propagate_case: true
+
+
+  - trigger: ":ag:"
+    replace: "antigen"
+    propagate_case: true
+
+
+  - trigger: ":ap:"
+    replace: "anteroposterior"
+    propagate_case: true
+
+
+  - trigger: ":c:"
+    replace: "cervical"
+    propagate_case: true
+
+
+  - trigger: ":t:"
+    replace: "thoracic"
+    propagate_case: true
+
+
+  - trigger: ":l:"
+    replace: "lumbar"
+    propagate_case: true
+
+
+  - trigger: ":s:"
+    replace: "sacral"
+    propagate_case: true
+
+
+  - trigger: ":3pg"
+    replace: "3-phosphoglycerate"
+    propagate_case: true
+
+
+  - trigger: ":2pg"
+    replace: "2-phosphoglycerate"
+    propagate_case: true
+
+
+  - trigger: ":pep:"
+    replace: "phosphoenolpyruvate"
+    propagate_case: true
+
+
+  - trigger: ":np:"
+    replace: "nasopharyn"
+    propagate_case: true
+
+
+  - trigger: ":op:"
+    replace: "oropharyn"
+    propagate_case: true
+
+
+  - trigger: ":pc:"
+    replace: "presenting complaint"
+    propagate_case: true
+
+
+  - trigger: ":hpc"
+    replace: "history of presenting complaint"
+    propagate_case: true
+
+
+  - trigger: ":mtx"
+    replace: "methotrexate"
+    propagate_case: true
+
+
+  - trigger: ":5fu"
+    replace: "5-fluorouracil"
+    propagate_case: true
+
+
+  - trigger: ":adl"
+    replace: "activities of daily living"
+    propagate_case: true
+
+
+  - trigger: ":sse"
+    replace: "stratified squamous epithelium"
+    propagate_case: true
+
+
+  - trigger: ":g:"
+    replace: "glucose"
+    propagate_case: true
+
+
+  - trigger: ":ggen"
+    replace: "gluconeogenesis"
+    propagate_case: true
+
+
+  - trigger: ":pi:"
+    replace: "phosphate"
+    propagate_case: true
+
+
+  - trigger: ":r5p"
+    replace: "ribose-5-phosphate"
+    propagate_case: true
+
+
+  - trigger: ":dic:"
+    replace: "disseminated intravascular coagulation"
+    propagate_case: true
+
+
+  - trigger: ":ca:"
+    replace: "carcinoma"
+    propagate_case: true
+
+
+  - trigger: ":ad:"
+    replace: "adenoma"
+    propagate_case: true
+
+
+  - trigger: ":hemo:"
+    replace: "hemangioma"
+    propagate_case: true
+
+
+  - trigger: ":ep:"
+    replace: "epithelial"
+    propagate_case: true
+
+
+  - trigger: ":1/7"
+    replace: "one day"
+    propagate_case: true
+
+
+  - trigger: ":2/7"
+    replace: "two day"
+    propagate_case: true
+
+
+  - trigger: ":3/7"
+    replace: "three day"
+    propagate_case: true
+
+
+  - trigger: ":4/7"
+    replace: "four day"
+    propagate_case: true
+
+
+  - trigger: ":5/7"
+    replace: "five day"
+    propagate_case: true
+
+
+  - trigger: ":6/7"
+    replace: "six day"
+    propagate_case: true
+
+
+  - trigger: ":7/7"
+    replace: "seven day"
+    propagate_case: true
+
+
+  - trigger: ":acei"
+    replace: "ACE Inhibitor"
+    propagate_case: true
+
+
+  - trigger: ":ace"
+    replace: "angiotensin converting enzyme"
+    propagate_case: true
+
+
+  - trigger: ":arb:"
+    replace: "angiotensin receptor blocker"
+    propagate_case: true
+
+
+  - trigger: ":h:"
+    replace: "histamine"
+    propagate_case: true
+
+
+  - trigger: ":e:"
+    replace: "estrogen"
+    propagate_case: true
+
+
+  - trigger: ":p:"
+    replace: "progesterone"
+    propagate_case: true
+
+
+  - trigger: ":ul:"
+    replace: "upper limb"
+    propagate_case: true
+
+
+  - trigger: ":ue:"
+    replace: "upper extremity"
+    propagate_case: true
+
+
+  - trigger: ":ll:"
+    replace: "lower limb"
+    propagate_case: true
+
+
+  - trigger: ":le:"
+    replace: "lower extremity"
+    propagate_case: true
+
+
+  - trigger: ":rft:"
+    replace: "renal function test"
+    propagate_case: true
+
+
+  - trigger: ":lft:"
+    replace: "liver function test"
+    propagate_case: true
+
+
+  - trigger: ":shbg"
+    replace: "sex-hormone binding globulin"
+    propagate_case: true
+
+
+  - trigger: ":trh"
+    replace: "thyrotropin-releasing hormone"
+    propagate_case: true
+
+
+  - trigger: ":gnrh"
+    replace: "gonadotrophin-releasing hormone"
+    propagate_case: true
+
+
+  - trigger: ":ev:"
+    replace: "extracellular vesicles"
+    propagate_case: true
+
+
+  - trigger: ":mra"
+    replace: "mineralocorticoid receptor antagonist"
+    propagate_case: true
+
+
+  - trigger: ":rona:"
+    replace: "SARS-nCoV-2"
+    propagate_case: true
+
+
+  - trigger: ":hiv"
+    replace: "human immunodeficiency virus"
+    propagate_case: true
+
+
+  - trigger: ":aids"
+    replace: "acquired immunodeficiency syndrome"
+    propagate_case: true
+
+
+  - trigger: ":laba:"
+    replace: "long-acting β-agonist"
+    propagate_case: true
+
+
+  - trigger: ":lama:"
+    replace: "long-acting muscarinic antagonist"
+    propagate_case: true
+
+
+  - trigger: ":mg:"
+    replace: "myaesthenia gravis"
+    propagate_case: true
+
+
+  - trigger: ":_mg"
+    replace: "magnesium"
+    propagate_case: true
+
+
+  - trigger: ":saba:"
+    replace: "short-acting β-agonist"
+    propagate_case: true
+
+
+  - trigger: ":bdp:"
+    replace: "beclometasone dipropionate"
+    propagate_case: true
+
+
+  - trigger: ":hpa"
+    replace: "hypothalamic-pituitary-adrenal axis"
+    propagate_case: true
+
+
+  - trigger: ":hpo"
+    replace: "hypothalamic-pituitary-ovarian axis"
+    propagate_case: true
+
+
+  - trigger: ":bv:"
+    replace: "bacterial vaginosis"
+    propagate_case: true
+
+
+  - trigger: ":cyp:"
+    replace: "cytochrome-P450"
+    propagate_case: true
+
+
+  - trigger: ":pk:"
+    replace: "pharmacokinetics"
+    propagate_case: true
+
+
+  - trigger: ":pd:"
+    replace: "pharmacodynamics"
+    propagate_case: true
+
+
+  - trigger: ":il:"
+    replace: "interleukin"
+    propagate_case: true
+
+
+  - trigger: ":bio:"
+    replace: "biologic drug"
+    propagate_case: true
+
+
+  - trigger: ":tnfa"
+    replace: "tumour necrosis factor α"
+    propagate_case: true
+
+
+  - trigger: ":tgfb"
+    replace: "transforming growth factor β"
+    propagate_case: true
+
+
+  - trigger: ":rtk"
+    replace: "receptor tyrosine kinase"
+    propagate_case: true
+
+
+  - trigger: ":gpcr"
+    replace: "G-protein coupled receptor"
+    propagate_case: true
+
+
+  - trigger: ":ac:"
+    replace: "adenylate cyclase"
+    propagate_case: true
+
+
+  - trigger: ":camp:"
+    replace: "cyclic adenosine monophosphate"
+    propagate_case: true
+
+
+  - trigger: ":amp:"
+    replace: "adenosine monophosphate"
+    propagate_case: true
+
+
+  - trigger: ":tyr:"
+    replace: "tyrosine"
+    propagate_case: true
+
+
+  - trigger: ":ifn:"
+    replace: "interferon"
+    propagate_case: true
+
+
+  - trigger: ":ifng"
+    replace: "interferon γ"
+    propagate_case: true
+
+
+  - trigger: ":pec:"
+    replace: "pectoralis"
+    propagate_case: true
+
+
+  - trigger: ":maj."
+    replace: "major"
+    propagate_case: true
+
+
+  - trigger: ":min."
+    replace: "minor"
+    propagate_case: true
+
+  - trigger: ":pfk:"
+    replace: "phosphofructokinase"
+    propagate_case: true
+
+
+  - trigger: ":sglt2:"
+    replace: "sodium-glucose co-transporter-2"
+    propagate_case: true
+
+
+  - trigger: ":sglt2i"
+    replace: "sodium-glucose co-transporter-2 inhibitor"
+    propagate_case: true
+
+
+  - trigger: ":pde:"
+    replace: "patient denies"
+    propagate_case: true
+
+
+  - trigger: ":+ft"
+    replace: "$|$'s history was positive for recent foreign travel"
+    propagate_case: true
+
+
+  - trigger: ":-ft"
+    replace: "$|$'s history was negative for recent foreign travel"
+    propagate_case: true
+
+
+  - trigger: ":ach:"
+    replace: "acetylcholine"
+    propagate_case: true
+
+
+  - trigger: ":ache:"
+    replace: "acetylcholinesterase"
+    propagate_case: true
+
+
+  - trigger: ":scid:"
+    replace: "severe combined immunodeficiency"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+  - trigger: ":rx"
+    replace: "prescription"
+    propagate_case: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  # Dates
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  # Shell commands
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo Hello from your shell"
