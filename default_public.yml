@@ -37,18 +37,19 @@ matches:
     replace: "{{C6::$|$}}"
     propagate_case: true
 
+# no c7?
 
   - trigger: ":c8"
     replace: "{{C8::$|$}}"
     propagate_case: true
 
   - trigger: ":c9"
-    replace: "{{C6::$|$}}"
+    replace: "{{C9::$|$}}"
     propagate_case: true
 
 
   - trigger: ":ci"
-    replace: "contraindicat"
+    replace: "contraindication"
     propagate_case: true
 
   - trigger: ":tx"
